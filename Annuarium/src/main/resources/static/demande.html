@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+      
+        <title>Annuarium: Banque d'actes de naissance</title>
+        <meta content="" name="description">
+        <meta content="" name="keywords">
+      
+        <!-- Favicons -->
+        <link href="assets/img/Annuarium.png" rel="icon">
+        <link href="assets/img/Annuarium.png" rel="apple-touch-icon">
+      
+         <!--Boutons avec des icônes et du texte-->
+         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+      
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+      
+        <!-- Vendor CSS Files -->
+        <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+        <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+        <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+        <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+        <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+        <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+      
+        <!-- Template Main CSS File -->
+        <link href="assets/css/style.css" rel="stylesheet">
+      
+        <!-- =======================================================
+        * Template Name: Bethany - v4.7.0
+        * Template URL: https://bootstrapmade.com/bethany-free-onepage-bootstrap-theme/
+        * Author: BootstrapMade.com
+        * License: https://bootstrapmade.com/license/
+        ======================================================== -->
+      </head>
+    <body>
+
+        <!-- ======= Header ======= -->
+   <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container">
+      <div class="header-container d-flex align-items-center justify-content-between">
+        <div class="logo">
+          <!-- <h1 class="text-light"><a href="index.html"><span>ActAnnu</span></a></h1> -->
+          <!-- Uncomment below if you prefer to use an image logo -->
+          <a href="index.html"><img src="assets/img/Annuarium.png" alt="" class="img-fluid"></a>
+        </div>
+
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li><a class="nav-link scrollto" href="index.html">Accueil</a></li>
+            <li><a class="nav-link scrollto" href="#about">A Propos </a></li>
+            
+            <li class="dropdown active"><a href="#"><span>Acte</span> <i class="bi bi-chevron-down"></i></a>
+              <ul>
+                <li><a href="liste.html">Liste des actes</a></li>
+               
+                <li><a href="enregistrer.html">Enregistrer un acte</a></li>
+                <li><a href="rechercher.html">Rechercher un acte</a></li>
+                
+              </ul>
+            </li>
+            <li><a class="nav-link scrollto" href="demande.html">Demander un acte</a></li>
+            <li><a class="getstarted scrollto" href="#about">Visitez notre site</a></li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav><!-- .navbar -->
+
+      </div><!-- End Header Container -->
+    </div>
+  </header><!--
+       End Header -->
+
+    <main id="main">
+         <!-- ======= Breadcrumbs ======= -->
+        <section class="breadcrumbs">
+        <div class="container">
+  
+          <div class="d-flex justify-content-between align-items-center">
+            <ol>
+              <li><a href="index.html">Accueil</a></li>
+              <li>Demander un acte </li>
+            </ol>
+          </div>
+  
+        </div>
+        </section><!-- End Breadcrumbs -->
+        <section class="inner-page" id="demande">
+            <div class="container align-content-center">
+              <div class="row">
+                  <div class="col-md-4">
+                      <div class="col-lg-10 mt-4">
+                          <div class="info">
+      
+                              <h4>Demander un acte de naissance</h4>
+                              <p>Entrer les informations nécessaires de l'acte de naissance</p>
+                          </div>
+                      </div>
+      
+                  </div>
+                  <div class="col-md-8">
+                      <form action="forms/contact.php" method="post" role="form" class="php-email-form mt-4">
+                          <label for="" class="text-label">Informations de l'enfant</label>
+                          <div class="row">
+      
+                              <div class="col-md-6 form-group">
+                                  <input type="text" name="nom" class="form-control" id="nom" placeholder="Nom de l'enfant" required>
+                              </div>
+                              <div class="col-md-6 form-group mt-3 mt-md-0">
+                                  <input type="text" class="form-control" name="prenom" id="nom" placeholder="Prénom de l'enfant" required>
+                              </div>
+                          </div>
+                          <div class="row">
+                              <div class="col-md-6 form-group">
+                                  <input type="date" name="datenaissance" class="form-control" id="datenaissance" placeholder="Date de naissance" required>
+                              </div>
+                              <div class="col-md-6 form-group mt-3 mt-md-0">
+                                  <input type="text" class="form-control" name="lieu" id="lieu" placeholder="Lieu de naissance" required>
+                              </div>
+                          </div>
+      
+                          <label class="text-label">Informations des parents</label>
+                          
+                          <div class="row">
+      
+                              <div class="col-md-6 form-group">
+                                  <input type="text" name="nomprenompere" class="form-control" id="nomprenompere" placeholder="Nom et Prenom du père" required>
+                              </div>
+                              <div class="col-md-6 form-group mt-3 mt-md-0">
+                                  <input type="text" class="form-control" name="nomprenommere" id="nomprenommere" placeholder="Nom et Prénom de la mère" required>
+                              </div>
+
+                          </div>
+
+                          <label class="text-label">Votre adresse mail</label>
+                          <div class="row">
+                            <div class="col-md-6 form-group">
+                                <input type="text" name="email" class="form-control" id="email" placeholder="Entrer votre email" required>
+                            </div>
+                          </div>
+                         
+      
+                         
+                          <div class="text-center"><button type="submit">Demander</button></div>
+                      </form>
+                  </div>
+              </div>
+            </div>
+          </section>
+
+    </main>
+    </body>
+</html>

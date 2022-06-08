@@ -1,0 +1,35 @@
+.container{
+z-index:-1;
+position: absolute;
+}
+.login{
+z-index:0;
+position:absolute;
+margin-top: 27rem;
+margin-left:10rem;
+
+}
+
+
+.validation-message {
+    font-style: normal;
+    font-size: 12px;
+    color: #FF1C19;
+}
+
+.btn-warning {
+    background-color: transparent;
+    width: 150px;
+    height: 50px;
+    font-size: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 3px solid #009970;
+
+}
+
+.btn-warning:hover{
+color: #009970;
+    transition: all ease-in-out .3s;
+
+}
